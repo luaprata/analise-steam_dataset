@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 # Configurações iniciais da página
 st.set_page_config(page_title="Steam Games Analysis", layout="wide")
@@ -12,9 +13,14 @@ st.markdown("---")
 
 # Carregar os dados
 @st.cache_data
-
 def load_data():
-    df = pd.read_parquet('dataset/games_march2025_clean.parquet')
+    parquet_path = 'dataset/games_march2025_clean.parquet'
+    
+    if not os.path.exists(parquet_path):
+        st.error(f"Arquivo não encontrado: {parquet_path}. Certifique-se que ele está no repositório.")
+        st.stop()
+
+    df = pd.read_parquet(parquet_path)
     df['release_date'] = pd.to_datetime(df['release_date'], errors='coerce')
     df['year'] = df['release_date'].dt.year
     df['semester'] = df['release_date'].dt.year.astype(str) + ' S' + df['release_date'].dt.month.apply(lambda x: '1' if x <= 6 else '2')
