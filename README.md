@@ -65,7 +65,6 @@ Observou-se um crescimento contínuo de lançamentos até o segundo semestre de 
 # 🔮 Próximos passos
 
 Novos questionamentos que irei investigar nos próximos dias:
-
-1 - Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
-2 - Quais gêneros de jogos têm as maiores médias de avaliações positivas?
-3 - Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
+1. Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
+2. Quais gêneros de jogos têm as maiores médias de avaliações positivas?
+3. Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
