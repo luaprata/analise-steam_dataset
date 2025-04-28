@@ -2,7 +2,7 @@
 
 Este projeto tem como objetivo analisar os jogos da Steam lançados entre 2021 e 2025, utilizando técnicas de análise exploratória de dados e visualização.
 
-🔗 [Gráficos dinâmicos no Streamlit) - Visualizar](https://lua-datasetsteam.streamlit.app/)
+🔗 [Visualize aqui os gráficos dinâmicos utilizando o Streamlit](https://lua-datasetsteam.streamlit.app/)
 
 ## 📚 Fonte de Dados
 
@@ -22,6 +22,7 @@ Para reproduzir o projeto:
 - Pandas
 - Matplotlib
 - PyArrow
+- Streamlit
 
 ## 📈 Estrutura do Projeto
 
@@ -31,6 +32,7 @@ Para reproduzir o projeto:
 ├── notebooks/       # Notebooks de limpeza e análise
 ├── README.md
 ├── requirements.txt
+├── app.py        	 # Aplicativo do Streamlit
 ├── .gitignore
 ```
 
