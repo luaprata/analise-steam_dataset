@@ -36,28 +36,28 @@ Para reproduzir o projeto:
 
 ### Top 10 Jogos Mais Avaliados (2021-2025)
 
-!1 - [Top 10 Jogos Mais Avaliados](análises/top10_mais_avaliados.png)
+![1 - Top 10 Jogos Mais Avaliados](análises/top10_mais_avaliados.png)
 
 Insight:
 Os jogos mais avaliados no Steam entre 2021 e 2025 incluem grandes lançamentos como Elden Ring e Baldur's Gate 3. Isso indica que títulos AAA continuam dominando o engajamento da comunidade, mas também há espaço para indies de sucesso como Lethal Company.
 
 ### Distribuição dos Preços dos Jogos Pagos (até $100) - (2021–2025)
 
-!2 - [Distribuição dos Preços dos Jogos Pagos](análises/distribuicao_precos_jogos_pagos_ate_100.png)
+![2 - Distribuição dos Preços dos Jogos Pagos](análises/distribuicao_precos_jogos_pagos_ate_100.png)
 
 Insight:
 A maioria dos jogos pagos tem preços concentrados entre $0 a $20, revelando uma estratégia de mercado focada em acessibilidade. Jogos mais caros (acima de $60) representam uma parcela muito pequena dos lançamentos.
 
 ### Top 10 Gêneros (2021–2025)
 
-!3 - [Top 10 Gêneros](análises/top10_generos.png)
+![3 - Top 10 Gêneros](análises/top10_generos.png)
 
 Insight:
 O gênero Action domina a quantidade de lançamentos no Steam, seguido de perto por Casual e Adventure. Isso mostra a preferência por jogos dinâmicos e de rápida imersão para o público da plataforma.
 
 ### Evolução dos Lançamentos de Jogos por Semestre (2021–2025)
 
-!4 - [Evolução dos Lançamentos de Jogos por Semestre](análises/evolucao_lancamentos_semestre.png)
+![4 - Evolução dos Lançamentos de Jogos por Semestre](análises/evolucao_lancamentos_semestre.png)
 
 Insight:
 Observou-se um crescimento contínuo de lançamentos até o segundo semestre de 2024. A queda em 2025 é explicada pelo fato de os dados disponíveis se referirem apenas ao primeiro trimestre.
