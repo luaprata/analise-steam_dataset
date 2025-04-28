@@ -17,7 +17,7 @@ def load_data():
     parquet_path = 'dataset/games_march2025_clean.parquet'
     
     if not os.path.exists(parquet_path):
-        st.error(f"Arquivo não encontrado: {parquet_path}. Certifique-se que ele está no repositório.")
+        st.error(f"Arquivo {parquet_path} não encontrado no repositório.")
         st.stop()
 
     df = pd.read_parquet(parquet_path)
