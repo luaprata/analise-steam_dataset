@@ -1,6 +1,6 @@
 # 🎮 Análise de Dados de Jogos Steam (2021-2025)
 
-Este projeto tem como objetivo analisar os jogos mais populares da Steam lançados entre 2021 e 2025, utilizando técnicas de análise exploratória de dados e visualização.
+Este projeto tem como objetivo analisar os jogos da Steam lançados entre 2021 e 2025, utilizando técnicas de análise exploratória de dados e visualização.
 
 ## 📚 Fonte de Dados
 
@@ -60,4 +60,12 @@ O gênero Action domina a quantidade de lançamentos no Steam, seguido de perto 
 ![Evolução dos Lançamentos de Jogos por Semestre](análises/evolucao_lancamentos_semestre.png)
 
 Insight:
-Observou-se um crescimento contínuo de lançamentos até o segundo semestre de 2024. A queda em 2025 é explicada pelo fato de os dados disponíveis se referirem apenas ao primeiro semestre.
+Observou-se um crescimento contínuo de lançamentos até o segundo semestre de 2024. A queda em 2025 é explicada pelo fato de os dados disponíveis se referirem apenas ao primeiro trimestre.
+
+# 🔮 Próximos passos
+
+Novos questionamentos que irei investigar nos próximos dias:
+
+1 - Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
+2 - Quais gêneros de jogos têm as maiores médias de avaliações positivas?
+3 - Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
