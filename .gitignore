@@ -1,1 +1,10 @@
-/dataset/
+# Ignorar datasets grandes
+dataset/games_march2025_full.csv
+dataset/games_march2025_clean.csv
+
+# Ignorar checkpoints do Jupyter
+.ipynb_checkpoints/
+
+# Ignorar cache Python
+__pycache__/
+*.pyc
