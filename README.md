@@ -36,4 +36,4 @@ Para reproduzir o projeto:
 
 ### Top 10 Jogos Mais Avaliados (2021-2025)
 
-![Top 10 Jogos Mais Avaliados](analises/top10_jogos_avaliados.png)
+![Top 10 Jogos Mais Avaliados](análises/top10_jogos_avaliados.png)
