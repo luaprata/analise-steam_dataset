@@ -30,3 +30,9 @@ Para reproduzir o projeto:
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+
+## 📊 Gráficos Gerados
+
+### Top 10 Jogos Mais Avaliados (2021-2025)
+
+![Top 10 Jogos Mais Avaliados](analises/top10_jogos_avaliados.png)
