@@ -45,3 +45,7 @@ Para reproduzir o projeto:
 ### Top 10 Gêneros (2021–2025)
 
 ![Top 10 Gêneros](análises/top10_generos.png)
+
+### Evolução dos Lançamentos de Jogos por Semestre (2021–2025)
+
+![Evolução dos Lançamentos de Jogos por Semestre](análises/evolucao_lancamentos_semestre.png)
