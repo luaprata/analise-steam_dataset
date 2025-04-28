@@ -37,3 +37,7 @@ Para reproduzir o projeto:
 ### Top 10 Jogos Mais Avaliados (2021-2025)
 
 ![Top 10 Jogos Mais Avaliados](análises/top10_mais_avaliados.png)
+
+### Distribuição dos Preços dos Jogos Pagos (até $100) - (2021–2025)
+
+![Distribuição dos Preços dos Jogos Pagos](análises/distribuicao_precos_jogos_pagos_ate_100.png)
