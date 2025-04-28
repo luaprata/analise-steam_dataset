@@ -41,3 +41,7 @@ Para reproduzir o projeto:
 ### Distribuição dos Preços dos Jogos Pagos (até $100) - (2021–2025)
 
 ![Distribuição dos Preços dos Jogos Pagos](análises/distribuicao_precos_jogos_pagos_ate_100.png)
+
+### Top 10 Gêneros (2021–2025)
+
+![Top 10 Gêneros](análises/top10_generos.png)
