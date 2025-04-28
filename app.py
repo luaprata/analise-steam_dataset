@@ -14,7 +14,7 @@ st.markdown("---")
 @st.cache_data
 
 def load_data():
-    df = pd.read_csv('../dataset/games_march2025_clean.csv')
+    df = pd.read_csv('../dataset/games_march2025_clean.parquet')
     df['release_date'] = pd.to_datetime(df['release_date'], errors='coerce')
     df['year'] = df['release_date'].dt.year
     df['semester'] = df['release_date'].dt.year.astype(str) + ' S' + df['release_date'].dt.month.apply(lambda x: '1' if x <= 6 else '2')
