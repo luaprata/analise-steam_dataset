@@ -30,6 +30,7 @@ Para reproduzir o projeto:
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+```
 
 ## 📊 Gráficos Gerados
 
