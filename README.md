@@ -72,3 +72,28 @@ Novos questionamentos que irei investigar nos próximos dias:
 1. Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
 2. Quais gêneros de jogos têm as maiores médias de avaliações positivas?
 3. Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
+
+## 📊 Questionamentos:
+
+### 1 - Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
+
+![Correlação entre o preço dos jogos e a quantidade de avaliações](análises/correlacao_preco_avaliacoes.png)
+
+Insight:
+A correlação de 0.18 indica uma relação levemente positiva, porém muito fraca entre preço e número de avaliações. Ou seja, jogos mais caros não garantem mais engajamento. Fatores como gênero, marketing, comunidade e popularidade parecem exercer maior influência na quantidade de avaliações recebidas
+
+
+### 2 - Quais gêneros de jogos têm as maiores médias de avaliações positivas?
+
+![Maiores médias de avaliações positivas](análises/top10_generos_multiplos_melhor_avaliados.png)
+
+Insight:
+Gêneros como Free To Play e Massively Multiplayer têm as melhores médias de avaliações positivas. A gratuidade e a interação social parecem influenciar positivamente a percepção dos jogadores.
+
+### 3 - Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
+
+![Existe uma sazonalidade no lançamento de jogos?](análises/lancamentos_por_mes.png)
+
+Insight:
+Outubro e novembro concentram os maiores volumes de lançamentos, impulsionados por estratégias de mercado como Black Friday, festas de fim de ano e elegibilidade para premiações. Esse padrão reflete um comportamento recorrente da indústria para maximizar vendas e visibilidade.
+

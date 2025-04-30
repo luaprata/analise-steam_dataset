@@ -3,3 +3,5 @@ pyarrow
 streamlit
 matplotlib
 numpy
+seaborn
+scipy
