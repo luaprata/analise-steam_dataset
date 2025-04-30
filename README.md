@@ -18,11 +18,13 @@ Para reproduzir o projeto:
 
 ## 🛠️ Tecnologias utilizadas
 
-- Python 3.x
-- Pandas
-- Matplotlib
-- PyArrow
-- Streamlit
+- Python 3.x – Linguagem principal usada na análise e construção do projeto.
+- Pandas – Manipulação e limpeza de dados tabulares.
+- Matplotlib – Criação de gráficos estáticos e visualizações personalizadas.
+- Seaborn – Visualizações estatísticas com foco em análise exploratória.
+- Scipy – Cálculo de correlação estatística (Pearson).
+- PyArrow – Leitura e escrita de arquivos Parquet de forma eficiente.
+- Streamlit – Construção da aplicação web interativa para visualização dos dados.
 
 ## 📈 Estrutura do Projeto
 
@@ -66,14 +68,8 @@ O gênero Action domina a quantidade de lançamentos no Steam, seguido de perto 
 Insight:
 Observou-se um crescimento contínuo de lançamentos até o segundo semestre de 2024. A queda em 2025 é explicada pelo fato de os dados disponíveis se referirem apenas ao primeiro trimestre.
 
-# 🔮 Próximos passos
 
-Novos questionamentos que irei investigar nos próximos dias:
-1. Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
-2. Quais gêneros de jogos têm as maiores médias de avaliações positivas?
-3. Existe uma sazonalidade no lançamento de jogos? Qual o mês com mais lançamentos?
-
-## 📊 Questionamentos:
+## 📊 Questionamentos
 
 ### 1 - Existe correlação entre o preço dos jogos e a quantidade de avaliações recebidas?
 
@@ -97,3 +93,21 @@ Gêneros como Free To Play e Massively Multiplayer têm as melhores médias de a
 Insight:
 Outubro e novembro concentram os maiores volumes de lançamentos, impulsionados por estratégias de mercado como Black Friday, festas de fim de ano e elegibilidade para premiações. Esse padrão reflete um comportamento recorrente da indústria para maximizar vendas e visibilidade.
 
+## 📊 Conclusão
+
+Este projeto teve como foco explorar dados da Steam entre 2021 e 2025, aplicando técnicas de análise exploratória para entender padrões de lançamentos, comportamento dos jogadores e tendências de mercado.
+Além de exercitar habilidades em Python, limpeza de dados, visualização com Matplotlib e Streamlit, os resultados obtidos mostram como é possível gerar valor prático a partir de dados públicos.
+
+A estrutura atual serve como base para futuras melhorias, como aplicação de modelos preditivos, clusterização de gêneros ou análises específicas por região. Este é um projeto em constante evolução e aberto para contribuições e ideias.
+
+
+## 🔮 Ideias Futuras
+
+Algumas possibilidades para evolução deste projeto incluem:
+
+1. Análise de tendências por desenvolvedora ou publicadora.
+2. Aplicação de modelos de regressão para prever avaliações com base em preço, gênero e tempo de jogo.
+3. Visualizações mais avançadas de sazonalidade por ano individual.
+4. Segmentação por idiomas e suporte a regiões.
+5. Clusterização de jogos por perfil (preço, popularidade, avaliações).
+6. Integração com APIs da Steam para dados em tempo real.
