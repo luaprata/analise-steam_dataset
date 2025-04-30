@@ -99,43 +99,52 @@ elif menu == "Evolução dos Lançamentos":
 # 5. Novos Questionamentos
 elif menu == "Novos Questionamentos":
     st.header("🔎 Novos Questionamentos e Análises")
+    tab1, tab2, tab3 = st.tabs([
+        "1. Preço x Avaliações",
+        "2. Gêneros + Avaliações",
+        "3. Sazonalidade"
+    ])
 
-    st.subheader("1. Correlação entre Preço e Número de Avaliações")
-    df_corr = df[df['price'] > 0][['price', 'num_reviews_total']].dropna()
-    corr, _ = pearsonr(df_corr['price'], df_corr['num_reviews_total'])
-    st.markdown(f"**Correlação de Pearson:** {corr:.2f}")
+    with tab1:
+        st.subheader("1. Correlação entre Preço e Número de Avaliações")
+        df_corr = df[df['price'] > 0][['price', 'num_reviews_total']].dropna()
+        corr, _ = pearsonr(df_corr['price'], df_corr['num_reviews_total'])
+        st.markdown(f"**Correlação de Pearson:** {corr:.2f}")
 
-    fig, ax = plt.subplots(figsize=(10,6))
-    sns.regplot(data=df_corr, x='price', y='num_reviews_total', scatter_kws={'alpha':0.3}, line_kws={'color':'red'}, ax=ax)
-    ax.set_yscale('log')
-    ax.set_xlabel("Preço ($)")
-    ax.set_ylabel("Número de Avaliações (escala log)")
-    ax.set_title("Relação entre Preço e Número de Avaliações (2021–2025)")
-    st.pyplot(fig)
+        fig, ax = plt.subplots(figsize=(10,6))
+        sns.regplot(data=df_corr, x='price', y='num_reviews_total', scatter_kws={'alpha':0.3}, line_kws={'color':'red'}, ax=ax)
+        ax.set_yscale('log')
+        ax.set_xlabel("Preço ($)")
+        ax.set_ylabel("Número de Avaliações (escala log)")
+        ax.set_title("Relação entre Preço e Número de Avaliações (2021–2025)")
+        st.pyplot(fig)
 
-    st.subheader("2. Gêneros com Melhores Avaliações Positivas")
-    df_genres = df.dropna(subset=['genres'])
-    df_genres['genres_list'] = df_genres['genres_clean'].str.split(',')
-    exploded = df_genres.explode('genres_list')
-    exploded = exploded[exploded['num_reviews_total'] > 0]
-    exploded['positive_ratio'] = exploded['num_reviews_positive'] / exploded['num_reviews_total']
-    genre_scores = exploded.groupby('genres_list')['positive_ratio'].mean().sort_values(ascending=False).head(10)
+    with tab2:
+        st.subheader("2. Gêneros com Melhores Avaliações Positivas")
+        df_genres = df.dropna(subset=['genres'])
+        df_genres['genres_clean'] = df_genres['genres'].str.replace(r"[\[\]']", "", regex=True)
+        df_genres['genres_list'] = df_genres['genres_clean'].str.split(',')
+        exploded = df_genres.explode('genres_list')
+        exploded = exploded[exploded['num_reviews_total'] > 0]
+        exploded['positive_ratio'] = exploded['num_reviews_positive'] / exploded['num_reviews_total']
+        genre_scores = exploded.groupby('genres_list')['positive_ratio'].mean().sort_values(ascending=False).head(10)
 
-    fig, ax = plt.subplots(figsize=(10,6))
-    genre_scores.plot(kind='barh', color='lightgreen', ax=ax)
-    ax.invert_yaxis()
-    ax.set_xlabel("% de Avaliações Positivas")
-    ax.set_ylabel("Gênero")
-    ax.set_title("Top 10 Gêneros com Melhores Avaliações Positivas (2021–2025)\n(considerando todos os gêneros de cada jogo)")
-    st.pyplot(fig)
+        fig, ax = plt.subplots(figsize=(10,6))
+        genre_scores.plot(kind='barh', color='lightgreen', ax=ax)
+        ax.invert_yaxis()
+        ax.set_xlabel("% de Avaliações Positivas")
+        ax.set_ylabel("Gênero")
+        ax.set_title("Top 10 Gêneros com Melhores Avaliações Positivas (2021–2025)\n(considerando todos os gêneros de cada jogo)")
+        st.pyplot(fig)
 
-    st.subheader("3. Sazonalidade dos Lançamentos")
-    monthly = df[df['year'] < 2025]['release_date'].dt.month.value_counts().sort_index()
-    month_labels = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+    with tab3:
+        st.subheader("3. Sazonalidade dos Lançamentos")
+        monthly = df[df['year'] < 2025]['release_date'].dt.month.value_counts().sort_index()
+        month_labels = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 
-    fig, ax = plt.subplots(figsize=(10,6))
-    ax.bar(month_labels, monthly)
-    ax.set_title("Lançamentos de Jogos por Mês (2021–2024)")
-    ax.set_xlabel("Mês")
-    ax.set_ylabel("Quantidade de Jogos Lançados")
-    st.pyplot(fig)
+        fig, ax = plt.subplots(figsize=(10,6))
+        ax.bar(month_labels, monthly)
+        ax.set_title("Lançamentos de Jogos por Mês (2021–2024)")
+        ax.set_xlabel("Mês")
+        ax.set_ylabel("Quantidade de Jogos Lançados")
+        st.pyplot(fig)
