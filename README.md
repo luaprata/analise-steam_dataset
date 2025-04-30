@@ -93,6 +93,8 @@ Gêneros como Free To Play e Massively Multiplayer têm as melhores médias de a
 Insight:
 Outubro e novembro concentram os maiores volumes de lançamentos, impulsionados por estratégias de mercado como Black Friday, festas de fim de ano e elegibilidade para premiações. Esse padrão reflete um comportamento recorrente da indústria para maximizar vendas e visibilidade.
 
+Obs: O ano de 2025 foi removido da análise, pois o dataset contém apenas dados do primeiro trimestre, o que poderia distorcer a visualização.
+
 ## 📊 Conclusão
 
 Este projeto teve como foco explorar dados da Steam entre 2021 e 2025, aplicando técnicas de análise exploratória para entender padrões de lançamentos, comportamento dos jogadores e tendências de mercado.
